@@ -1,0 +1,22 @@
+{
+	"configurations": [
+		{
+			"name": "MyProjectEditor Editor Win64 Development (MyProject)",
+			"compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "msvc-x64",
+			"configurationProvider": "epic.ue",
+			"compileCommands": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_MyProject.json"
+		},
+		{
+			"name": "Win32",
+			"compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "msvc-x64",
+			"configurationProvider": "epic.ue",
+			"compileCommands": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default.json"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProject.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\MyProject.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectCharacter.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\MyProjectCharacter.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectGameMode.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\MyProjectGameMode.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\CharacterAnimInstance.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\CharacterAnimInstance.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\DataAsset\\WeaponDataAsset.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\WeaponDataAsset.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Enemy\\Enemy.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\Enemy.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\HitInterface.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\HitInterface.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Item\\Item.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\Item.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Item\\Weapon.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\Weapon.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\MyProject.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source",
+        "file": "c:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\unreal-clangd\\completionHelper.cpp"
+    }
+]

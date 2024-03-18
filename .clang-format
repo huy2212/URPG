@@ -1,0 +1,11 @@
+---
+BasedOnStyle: LLVM
+UseTab: Never
+BreakBeforeBraces: Allman
+ColumnLimit: 120
+IndentWidth: 4
+SortIncludes: "false"
+AccessModifierOffset: -4
+NamespaceIndentation: All
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None

@@ -1,0 +1,14 @@
+---
+If:
+  PathMatch:
+    - .vscode/unreal-clangd/completionHelper.cpp
+    - Source/.*\.(cpp|h)
+CompileFlags:
+  Add:
+    - -D__INTELLISENSE__
+  CompilationDatabase: c:/Users/123/Documents/Unreal Projects/MyProject/.vscode/unreal-clangd
+InlayHints:
+  Enabled: Yes
+  DeducedTypes: Yes
+  ParameterNames: Yes
+  Designators: Yes

@@ -1,0 +1,130 @@
+[
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProject.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProject.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProject.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectCharacter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\MyProjectGameMode.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\CharacterAnimInstance.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\DataAsset\\WeaponDataAsset.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Item\\Item.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Item\\Weapon.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Character\\CharacterAnimInstance.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Character\\CharacterState.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\DataAsset\\WeaponDataAsset.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Item\\Item.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Item\\Weapon.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	}
+]
