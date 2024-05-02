@@ -1,10 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
 #include "Item/Item.h"
 #include "DataAsset/WeaponDataAsset.h"
+#include "UObject/ObjectMacros.h"
+#include "Engine/EngineTypes.h"
+#include "Interfaces/IBlockable.h"
 #include "Weapon.generated.h"
 /**
  *
@@ -16,49 +17,111 @@ class MYPROJECT_API AWeapon : public AItem
 
 public:
     AWeapon();
-    void Attach(USceneComponent *InParent, FName InSocketName);
 
+    UFUNCTION(BlueprintCallable)
+    void Attach(USceneComponent *InParent, FName InSocketName, AActor *NewOwner, APawn *NewInstigator);
+
+    UFUNCTION(BlueprintCallable)
     void Detach();
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     UWeaponDataAsset *WeaponDataAsset;
 
-    UPROPERTY(VisibleAnywhere)
-    class UBoxComponent *WeaponHitBox;
+    UPROPERTY(BlueprintReadWrite)
+    bool CanBeEquipped = true;
+
+    TArray<AActor *> IgnoreActors;
+
+    class UBoxComponent *GetWeaponHitBox()
+    {
+        return this->WeaponHitBox;
+    }
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    class UAnimMontage *GetWeaponAttackMontage()
+    {
+        return this->AttackMontage;
+    }
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    class UAnimMontage *GetWeaponEquipMontage()
+    {
+        return this->EquipMontage;
+    }
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    class UAnimMontage *GetWeaponUnequipMontage()
+    {
+        return this->UnequipMontage;
+    }
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    class UAnimMontage *GetWeaponBlockMontage()
+    {
+        return this->BlockMontage;
+    }
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    class UAnimMontage *GetWeaponBlockSuccessMontage()
+    {
+        return this->BlockSuccessMontage;
+    }
+
+    UFUNCTION(BlueprintCallable)
+    void SetDamage(float DamageAmount)
+    {
+        this->Damage = DamageAmount;
+    }
+
+    UFUNCTION(BlueprintCallable)
+    void SetCanBlock(bool bCanBlock)
+    {
+        this->CanBeBlocked = bCanBlock;
+    }
 
 protected:
     virtual void BeginPlay() override;
-    virtual void OnSphereOverlap(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor,
-                                 UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep,
-                                 const FHitResult &SweepResult) override;
-    virtual void OnSphereEndOverlap(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor,
-                                    UPrimitiveComponent *OtherComp, int32 OtherBodyIndex) override;
 
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnBoxOverlap(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp,
                       int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 
-    UPROPERTY(EditDefaultsOnly)
-    class UPhysicalMaterial *WeaponPhysicMaterial;
-
 private:
+    class UBoxComponent *WeaponHitBox;
+
     UPROPERTY(VisibleAnywhere)
     USceneComponent *BoxTraceStart;
 
     UPROPERTY(VisibleAnywhere)
     USceneComponent *BoxTraceEnd;
 
+    /**
+     * Weapon anim montage
+     */
     UPROPERTY(EditDefaultsOnly)
     class UAnimMontage *AttackMontage;
 
-public:
-    UBoxComponent *GetWeaponHitBox()
-    {
-        return WeaponHitBox;
-    }
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *EquipMontage;
 
-    UAnimMontage *GetWeaponAttackMontage()
-    {
-        return AttackMontage;
-    }
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *UnequipMontage;
+
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *BlockMontage;
+
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *BlockSuccessMontage;
+
+    UPROPERTY(EditDefaultsOnly)
+    class UParticleSystem *HitVFX;
+
+    /**
+     * Weapon attack behavior, will be set before each attack through animmetadata
+     */
+    UPROPERTY(EditAnywhere, category = "Weapon Properties")
+    float Damage = 20.f; // Default damage value
+
+    UPROPERTY()
+    bool CanBeBlocked;
 };

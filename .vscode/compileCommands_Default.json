@@ -56,6 +56,22 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\AI\\EnemyAIController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\AI\\PatrolPath.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\CharacterAnimInstance.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
@@ -64,7 +80,55 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Components\\HealthComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\DataAsset\\WeaponDataAsset.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Enemy\\Enemy.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\HUD\\HealthBar.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\HUD\\HealthBarComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\EnemyAIInterface.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\HitInterface.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
@@ -88,6 +152,22 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\AI\\EnemyAIController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\AI\\PatrolPath.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Character\\CharacterAnimInstance.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
@@ -104,7 +184,55 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Components\\HealthComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\DataAsset\\WeaponDataAsset.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Enemy\\Enemy.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\HUD\\HealthBar.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\HUD\\HealthBarComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Interfaces\\EnemyAIInterface.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Public\\Interfaces\\HitInterface.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\.vscode\\compileCommands_Default\\MyProject.261.rsp"

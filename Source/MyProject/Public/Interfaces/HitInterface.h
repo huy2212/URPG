@@ -7,19 +7,30 @@
 #include "HitInterface.generated.h"
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(MinimalAPI, BlueprintType, meta = (CannotImplementInterfaceInBlueprint))
 class UHitInterface : public UInterface
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 };
 
 /**
- * 
+ *
  */
 class MYPROJECT_API IHitInterface
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+    UFUNCTION(BlueprintCallable)
+    virtual void GetHit(const FVector &ImpactPoint) = 0;
+
+    UFUNCTION(BlueprintCallable)
+    virtual void TakeDamageInterface(float DamageAmount, struct FDamageEvent const &DamageEvent,
+                                     class AController *EventInstigator, AActor *DamageCauser) = 0;
+
+    UFUNCTION(BlueprintCallable)
+    virtual bool IsDead() = 0;
+
+    UFUNCTION(BlueprintCallable)
+    virtual void Die() = 0;
 };

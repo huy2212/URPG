@@ -7,5 +7,5 @@ IndentWidth: 4
 SortIncludes: "false"
 AccessModifierOffset: -4
 NamespaceIndentation: All
-AllowShortIfStatementsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: true

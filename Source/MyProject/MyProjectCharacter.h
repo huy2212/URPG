@@ -1,14 +1,21 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
-
+#include "Animation/AnimMontage.h"
+#include "Components/HealthComponent.h"
 #include "CoreMinimal.h"
 #include "DataAsset/WeaponDataAsset.h"
 #include "GameFramework/Character.h"
+#include "HUD/HealthBarComponent.h"
 #include "InputActionValue.h"
 #include "Character/CharacterState.h"
+#include "DataAsset/WeaponDataAsset.h"
+#include "Interfaces/HitInterface.h"
+#include "UObject/ObjectMacros.h"
+#include "Interfaces/IBlockable.h"
 #include "MyProjectCharacter.generated.h"
-UCLASS(config = Game) class AMyProjectCharacter : public ACharacter
+
+UCLASS()
+class MYPROJECT_API AMyProjectCharacter : public ACharacter, public IIBlockable, public IHitInterface
 {
     GENERATED_BODY()
 
@@ -36,48 +43,40 @@ UCLASS(config = Game) class AMyProjectCharacter : public ACharacter
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
     class UInputAction *LookAction;
 
-    /** Look Input Action */
+    /** Equip Input Action */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
     class UInputAction *EquipAction;
 
-    /** Look Input Action */
+    /** Attack Input Action */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
     class UInputAction *AttackAction;
 
-    UPROPERTY(VisibleInstanceOnly)
-    class AItem *OverlappingItem;
+    /** Block or Aim Input Action */
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+    class UInputAction *BlockAction;
 
 public:
     AMyProjectCharacter();
 
-    void SetOverlappingItem(AItem *Item)
-    {
-        OverlappingItem = Item;
-    }
-
-    ECharacterState GetCharacterState()
-    {
-        return CharacterState;
-    }
-
 protected:
     /** Called for movement input */
     void Move(const FInputActionValue &Value);
-
-    /** Called for looking input */
     void Look(const FInputActionValue &Value);
     void Equip();
     void Attack();
 
-    void PlayAttackMontage();
+    UFUNCTION(BlueprintCallable)
+    void Block();
 
+    UFUNCTION(BlueprintCallable)
+    void BlockEnd();
+
+    /** Animation events */
     UFUNCTION(BlueprintCallable)
     void AttackEnd();
 
     UFUNCTION(BlueprintCallable)
-    void ToggleCollision(ECollisionEnabled::Type CollisionType);
-
-    void UnequippedOldWeapon();
+    void ToggleWeaponCollision(ECollisionEnabled::Type CollisionType, bool IsLeftHandWeapon);
 
 protected:
     // APawn interface
@@ -86,25 +85,160 @@ protected:
     // To add mapping context
     virtual void BeginPlay();
 
+    virtual void Jump() override;
+
+    virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent,
+                             class AController *EventInstigator, AActor *DamageCauser) override;
+
+private:
+    TArray<class AWeapon *> EquippedWeapons;
+
+    TArray<class AItem *> OverlappingItems;
+
+    ECharacterState CharacterState;
+
+    EActionState ActionState;
+
+    EWeaponType CurrentWeaponType = EWeaponType::Unequipped;
+
+    int32 AttackCounter;
+
+    UAnimInstance *AnimInstance;
+
+    class AWeapon *EquippedLeftHandWeapon;
+
+    class AWeapon *EquippedRightHandWeapon;
+
+    UAnimMontage *AttackMontage;
+
+    UAnimMontage *BlockMontage;
+
+    UAnimMontage *BlockSuccessMontage;
+
+    bool IsEquippingWeapon;
+
+    UPROPERTY(EditDefaultsOnly)
+    float CombatRemainTime;
+
+    FTimerHandle CombatTimerHandle;
+
+    void SetStateToUnequipped();
+
+    void AttachWeaponToHand(UWeaponDataAsset *WeaponAsset, class AWeapon *OverlappingWeapon);
+
+    void UnequippedOldWeapon();
+
+    void PlayHitReactMontage(const FName &SectionName);
+
+    void PlayDeathMontage();
+
+    void SetWeaponAttackBehavior(float DamageAmount, bool bCanBlock);
+
+    void OnMontageBlendingOut(UAnimMontage *AnimMontage, bool bIsInterrupted);
+
+    void SetIsCombattingToFalse();
+
 public:
-    /** Returns CameraBoom subobject **/
+    /**
+     * Blockable Interface
+     */
+
+    UFUNCTION(BlueprintCallable, category = "Block")
+    virtual void StartBlock() override;
+
+    UFUNCTION(BlueprintCallable, category = "Block")
+    virtual void EndBlock() override;
+
+    UFUNCTION(BlueprintCallable, category = "Block")
+    virtual void OnBlockSuccess() override;
+
+    UFUNCTION(BlueprintCallable, category = "Block")
+    virtual bool IsBlocking() override
+    {
+        return bIsBlocking;
+    };
+
+    UFUNCTION(BlueprintCallable, category = "Block")
+    virtual bool CanBlock() override
+    {
+        return bCanBlock;
+    };
+
+    UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+    bool bIsBlocking;
+
+    UPROPERTY(EditDefaultsOnly)
+    bool bCanBlock;
+
+    /**
+     * IHitInterface
+     */
+    UFUNCTION(BlueprintCallable)
+    virtual void GetHit(const FVector &ImpactPoint) override;
+
+    UFUNCTION(BlueprintCallable)
+    virtual void TakeDamageInterface(float DamageAmount, struct FDamageEvent const &DamageEvent,
+                                     class AController *EventInstigator, AActor *DamageCauser) override;
+
+    UFUNCTION(BlueprintCallable)
+    virtual bool IsDead() override;
+
+    UFUNCTION(BlueprintCallable)
+    virtual void Die() override;
+
     FORCEINLINE class USpringArmComponent *GetCameraBoom() const
     {
         return CameraBoom;
     }
-    /** Returns FollowCamera subobject **/
+
     FORCEINLINE class UCameraComponent *GetFollowCamera() const
     {
         return FollowCamera;
     }
 
-private:
-    ECharacterState CharacterState = ECharacterState::Unarmed;
+    void AddOverlappingItem(AItem *Item)
+    {
+        OverlappingItems.AddUnique(Item);
+    }
 
-    EActionState ActionState = EActionState::Unoccupied;
-    int32 AttackCounter;
+    void RemoveOverlappingItem(AItem *Item)
+    {
+        OverlappingItems.Remove(Item);
+    }
 
-    class AWeapon *EquippedWeapon = nullptr;
-    class AWeapon *AnotherHandWeapon;
-    bool IsOneWeaponEquipped = false;
+    UFUNCTION(BlueprintCallable)
+    ECharacterState GetCharacterState()
+    {
+        return CharacterState;
+    }
+
+    UPROPERTY(EditAnywhere)
+    class UHealthComponent *HealthComponent;
+
+    UPROPERTY(EditAnywhere)
+    TSubclassOf<UUserWidget> WidgetClass;
+
+    UPROPERTY(VisibleAnywhere)
+    class UHealthBar *HealthBarWidget;
+
+    UPROPERTY(BlueprintReadOnly)
+    EDeathPose DeathPose = EDeathPose::Alive;
+
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *DeathMontage;
+
+    UPROPERTY(EditDefaultsOnly)
+    class UAnimMontage *HitReactMontage;
+
+    UFUNCTION(BlueprintCallable)
+    void PlayAttackMontage();
+
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    bool IsCombatting = false;
+
+    UPROPERTY(BlueprintReadOnly)
+    bool CanJumpToBlockEndSectionFromStartSection;
+
+    UPROPERTY(BlueprintReadOnly)
+    bool IsAttacking = false;
 };

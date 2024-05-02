@@ -11,9 +11,11 @@ enum class EWeaponType : uint8
 {
     Unequipped,
     BoxingGlove,
-    LightSword
+    LightSword,
+    Pistol,
+    SwordAndShield,
+    TwoHandSword,
 };
-
 /**
  *
  */
@@ -23,15 +25,24 @@ class MYPROJECT_API UWeaponDataAsset : public UPrimaryDataAsset
     GENERATED_BODY()
 
 public:
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     FName LeftHandSocketName;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     FName RightHandSocketName;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    bool bIsRightHand;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    FName HolderSocketName;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    bool IsLeftHand;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    bool IsBothHandWeaponType;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+    bool CanBlock;
+
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
     EWeaponType WeaponType;
 };

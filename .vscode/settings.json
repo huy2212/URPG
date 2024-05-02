@@ -1,9 +1,9 @@
 {
+    "C_Cpp.errorSquiggles": "disabled",
     "unreal-clangd.creation.overwrite": "full",
     "unreal-clangd.utility.createProjectOnStartup": false,
     "C_Cpp.autocomplete": "disabled",
-    "C_Cpp.errorSquiggles": "disabled",
-    "C_Cpp.formatting": "vcFormat",
+    "C_Cpp.formatting": "disabled",
     "C_Cpp.intelliSenseEngine": "disabled",
     "editor.suggest.snippetsPreventQuickSuggestions": false
 }

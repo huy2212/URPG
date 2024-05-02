@@ -1,35 +1,27 @@
 #include "Item/Item.h"
+#include "Components/SceneComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "MyProject/MyProjectCharacter.h"
 
-// Sets default values
 AItem::AItem()
 {
-    // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
     ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ItemMesh"));
     RootComponent = ItemMesh;
 
+    // Set up item sphere overlap
     Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollider"));
-    Sphere->SetupAttachment(ItemMesh);
+    Sphere->SetupAttachment(GetRootComponent());
     Sphere->SetGenerateOverlapEvents(true);
-}
-
-// Called when the game starts or when spawned
-#include "MyProject/MyProjectCharacter.h" // Add this include statement
-
-void AItem::BeginPlay()
-{
-    Super::BeginPlay();
     Sphere->OnComponentBeginOverlap.AddDynamic(this, &AItem::OnSphereOverlap);
     Sphere->OnComponentEndOverlap.AddDynamic(this, &AItem::OnSphereEndOverlap);
 }
 
-// Called every frame
-void AItem::Tick(float DeltaTime)
+void AItem::BeginPlay()
 {
-    Super::Tick(DeltaTime);
+    Super::BeginPlay();
 }
 
 void AItem::OnSphereOverlap(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor,
@@ -39,7 +31,7 @@ void AItem::OnSphereOverlap(UPrimitiveComponent *OverlappedComponent, AActor *Ot
     AMyProjectCharacter *MyProjectCharacter = Cast<AMyProjectCharacter>(OtherActor);
     if (MyProjectCharacter)
     {
-        MyProjectCharacter->SetOverlappingItem(this);
+        MyProjectCharacter->AddOverlappingItem(this);
     }
 }
 
@@ -49,6 +41,6 @@ void AItem::OnSphereEndOverlap(UPrimitiveComponent *OverlappedComponent, AActor 
     AMyProjectCharacter *MyProjectCharacter = Cast<AMyProjectCharacter>(OtherActor);
     if (MyProjectCharacter)
     {
-        MyProjectCharacter->SetOverlappingItem(nullptr);
+        MyProjectCharacter->RemoveOverlappingItem(this);
     }
 }

@@ -15,8 +15,38 @@
         "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
     },
     {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\AI\\EnemyAIController.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\EnemyAIController.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\AI\\PatrolPath.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\PatrolPath.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
         "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\CharacterAnimInstance.cpp",
         "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\CharacterAnimInstance.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\EnemyAnimInstance.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\EnemyAnimInstance.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Character\\PlayerAnimInstance.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\PlayerAnimInstance.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Components\\HealthComponent.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\HealthComponent.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\DataAsset\\AttackBehavior.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\AttackBehavior.cpp.obj.response.gcd\"",
         "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
     },
     {
@@ -25,13 +55,43 @@
         "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
     },
     {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Enemy\\BossEnemy.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\BossEnemy.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
         "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Enemy\\Enemy.cpp",
         "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\Enemy.cpp.obj.response.gcd\"",
         "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
     },
     {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Enemy\\RangeEnemy.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\RangeEnemy.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\HUD\\HealthBar.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\HealthBar.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\HUD\\HealthBarComponent.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\HealthBarComponent.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\EnemyAIInterface.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\EnemyAIInterface.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
         "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\HitInterface.cpp",
         "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\HitInterface.cpp.obj.response.gcd\"",
+        "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+    },
+    {
+        "file": "C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Source\\MyProject\\Private\\Interfaces\\IBlockable.cpp",
+        "command": "\"C:\\Program Files\\LLVM\\bin\\clang-cl.exe\" @\"C:\\Users\\123\\Documents\\Unreal Projects\\MyProject\\Intermediate\\Build\\Win64\\x64\\UnrealEditor\\DebugGame\\MyProject\\IBlockable.cpp.obj.response.gcd\"",
         "directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
     },
     {

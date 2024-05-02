@@ -19,7 +19,7 @@ protected:
     virtual void NativeUpdateAnimation(float DeltaTime) override;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    class AMyProjectCharacter *Character;
+    class ACharacter *Character;
 
     UPROPERTY(BlueprintReadOnly)
     class UCharacterMovementComponent *CharacterMovement;
@@ -30,6 +30,15 @@ protected:
     UPROPERTY(BlueprintReadOnly)
     bool IsFalling;
 
-    UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-    ECharacterState CharacterState;
+    UPROPERTY(BlueprintReadOnly)
+    bool ShouldMove;
+
+    UPROPERTY(BlueprintReadOnly)
+    float Acceleration;
+
+    UPROPERTY(BlueprintReadOnly)
+    float Direction;
+
+    UPROPERTY(BlueprintReadOnly)
+    float LastDirection;
 };
